@@ -1,0 +1,18 @@
+Basic Kubectl Commands
+Section 1, session 13
+Commands For Cut & Paste
+
+kubectl get pods
+kubectl get pods [pod name]
+kubectl expose <type name> <identifier/name> [—port=external port] [—target-port=container-port [—type=service-type]
+kubectl port-forward <pod name> [LOCAL_PORT:]REMOTE_PORT]
+kubectl attach <pod name> -c <container>
+kubectl exec  [-it] <pod name> [-c CONTAINER] — COMMAND [args…]
+kubectl label [—overwrite] <type> KEY_1=VAL_1 ….
+kubectl run <name> —image=image
+Correction:
+After the Basic Kubectl lecture is recorded, the hazelcast docker image has been moved to hazelcast/hazelcast (https://hub.docker.com/r/hazelcast/hazelcast/)
+
+So the command to run hazelcast should be kubectl run hazelcast --image=hazelcast/hazelcast --port=5701 instead.
+
+(thanks Anton for reporting this issue)

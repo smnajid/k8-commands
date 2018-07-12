@@ -1,0 +1,6 @@
+Web Interface Commands
+Section 2, session 22
+Commands For Cut & Paste
+
+kubectl proxy
+kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
